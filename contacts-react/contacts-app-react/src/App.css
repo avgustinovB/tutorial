@@ -1,0 +1,53 @@
+/* img{
+    border-radius: 50%;
+} */
+
+.contactItem{
+display: flex;
+align-items: center;
+width:100%;
+
+height:100px;
+box-shadow: -1px 21px 15px -20px rgba(0,0,0,0.75);
+margin-bottom: 10px;
+}
+.contact-image{
+border-radius: 45%;
+width: 100px;
+height:100px;
+margin: 5px;
+
+
+}
+
+.info{
+
+
+}
+
+.name{
+font-size: 20px;
+
+}
+
+.phone-number{
+font-size: 15px;
+
+}
+
+.app{
+width:300px;
+margin: 0 auto;
+
+}
+.search-field{
+width:300px;
+padding:10px;
+
+
+}
+.contacts-list{
+padding: 10px;
+width:100%
+
+}

@@ -1,0 +1,98 @@
+body{
+    width:1300px;
+     margin: 0 auto
+}
+#interlude{
+    width:1200px;
+     margin: 0 auto
+}
+#marcy{
+    width:300px;
+    height:inherit;
+    background-color: #3caded;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    color: beige;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: -1px 23px 31px -27px #000000;
+    z-index: 2;
+    
+   
+}
+h1{
+    display: block;
+    width: 1000px;
+    height: inherit;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 150px;
+    letter-spacing: 100px;
+    position: relative;
+    z-index: 1;
+}
+#menu{
+    position: absolute;
+    top:100px;
+    left:100px;
+}
+#button1{
+    width: 150px;
+    height: 21px;
+    background-color: #3caded;
+    border-radius:20px;
+    text-align: center;
+    border: 1px solid white;
+    font-family: 'Amatic SC', cursive;
+    color: beige;
+    position: relative; 
+    left:100px;
+    box-shadow: -1px -1px 20px -5px #000000;
+}
+#button2{
+    width: 200px;
+    height: 21px;
+    background-color: gray;
+    border-radius:20px;
+    text-align: center;
+    border: 1px solid white;
+    font-family: 'Amatic SC', cursive;
+    color: beige;
+    position: relative; 
+    left:100px;
+    box-shadow: -1px -1px 20px -5px #000000;
+}
+section{
+    height: inherit;
+    
+}
+#text{
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+#down{
+    width:1200px;
+    height: 300px
+}
+blockquote{
+    font-size: 20px;
+}
+p{
+    font-family: 'Amatic SC', cursive;
+}
+h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.section-div{
+    width:600px;
+    float:left;
+}
+.almost-video{
+    height: 300px;
+    
+}

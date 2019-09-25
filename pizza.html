@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+            window.onload = function(){
+                div = document.getElementById('total')
+            var form = document.forms[0];
+            var total = 0;
+            form.addEventListener('change',function(){
+              var  price = 0
+            for (i=0;i<form.elements.length; i++)
+            
+    if(form.elements[i].checked){
+        value1 = parseInt(form.elements[i].value);
+        price+=value1;
+        div.innerHTML = ' Обшая стоимость '+ price+' грн';}
+   
+    },false)}
+        </script>
+</head>
+<body>
+    
+</head>
+<body>
+<h3>Какой вы желаете размер пиццы</h3>
+<form >
+<input type="radio" name="size" value="30"> маленькая<br/>
+<input type="radio" name="size" value="35"> средняя<br/>
+<input type="radio" name="size" value="40"> большая<br/>
+<h3>Добавьте топинги по-вкусу</h3>
+<input type="checkbox"  value="5"> грибы<br/>
+<input type="checkbox"  value="5"> бекон<br/>
+<input type="checkbox"  value="5"> помидор<br/>
+<input type="checkbox"  value="5"> сыр<br/>
+<input type="checkbox"  value="5"> оливки<br/>
+
+</form>
+<form >
+<h3>Введите данные</h3>
+<label id="tele" for="telephone">Введите номер телефона</label>
+<input type="tel" pattern="\d{3}-\d{3}-\d{2}-\d{2}" required title="формат ввода 0xx-xxx-xx-xx"  id="telephone" value=""><br/>
+<label  id="adrss" for="adress">Введите домашний адрес</label>
+<input type="text"  title="Улица/номер дома"   title="Улица/дом" required id="adress" value="">
+<input type="submit" value="отправить">
+<p id="total"></p>
+</form>
+
+</body>
+</html>

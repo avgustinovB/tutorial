@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #object{
+            width: 100px;
+        height: 100px;
+        border: solid 5px black;
+        background-color: aqua;
+        position: absolute;
+        top: 500px;
+        left: 500px;
+        }
+        
+    </style>
+</head>
+<body>
+  
+    <input type="button" id="up" value="&uarr;">
+    <input type="button" id="left" value="&larr;">
+    <input type="button" id="right" value="&rarr;">
+    <input type="button" id="down" value="&darr;">
+   
+<div id="object"> hello</div>
+<script>
+object = document.getElementById('object');
+ var up = document.getElementById('up');
+var left = document.getElementById('left');
+var right = document.getElementById('right');
+var down = document.getElementById('down');
+var posTop = 500;
+var posLeft = 500;
+var action;
+left.onclick = function  (){
+    action =  setInterval(function(){
+         object.style.left = posLeft + 'px';
+    posLeft--;
+    if(posLeft%100==0){
+        clearInterval(action);
+    };
+    },10);
+
+};
+up.onclick = function(){
+   action = setInterval(function(){
+    object.style.top = posTop + 'px';
+    posTop--;
+    if(posTop%100==0){
+        clearInterval(action);
+    };
+    },10);
+    
+};
+right.onclick = function (){
+    action = setInterval(function(){ 
+        object.style.left = posLeft + 'px';
+    posLeft++;
+    if(posLeft%100==0){
+        clearInterval(action);
+    };
+    },10);
+    
+    
+};
+down.onclick = function (){
+    action = setInterval(function(){
+        object.style.top = posTop + 'px';
+    posTop++;
+    if(posTop%100==0){
+        clearInterval(action);
+    }
+    },10)
+    
+};
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #container{
+            width : 1000px;
+            height: 500px;
+            background-color: black;
+            border: 5px solid red;
+            position: absolute
+        }
+        #ball1{
+            width:50px; 
+            height: 50px;
+            border:5px solid white; 
+            border-radius: 50px;
+            position: absolute;
+            }
+            #ball2{
+            width:90px; 
+            height: 90px;
+            border:5px solid white; 
+            background-color: green;
+            border-radius: 50px;
+            position: absolute;
+            }
+           
+    </style>
+    <div id = 'container'>
+        <div id = 'ball1'></div>
+        <div id = 'ball2'></div>
+    </div>
+    <script> 
+    // гляньте пожалуйста на функцию, мне кажется что я там начудил немного и она не работает
+    // function getrandomcolor(){
+    //     var patstr = ['A','B','C','D','E','F',0,1,2,3,4,5,6,7,8,9];
+    //     var randC = '#';
+    //     while (randC.length<7){
+    //         randC+=patstr[Math.floor(Math.random()*17)];
+    //         return randc;
+    //     };
+    // };
+    var leftPos = 10;
+    var topPos = 10;
+    var speedX = 1;
+    var speedY= 2;
+    function move(){
+        var ball1 = document.getElementById('ball1');
+        ball1.style.left = leftPos + 'px';
+        ball1.style.top = topPos + 'px';
+        leftPos+=speedX;
+        topPos +=speedY;
+        if (leftPos<=940&&leftPos>=0){
+            speedX*=1;}
+            else{speedX*=-1;
+             }
+
+          if(topPos<=440&&topPos>=0){
+              speedY*=1;
+          }  else{speedY*=-1;
+        //   ball1.style.backgroundColor = getrandomcolor();
+          };
+        };
+        
+        var leftPos1 = 20;
+    var topPos1 = 15;
+    var speedX1 = 5;
+    var speedY1= 2;
+   
+    function move1(){
+        
+        var ball2 = document.getElementById('ball2');
+        ball2.style.left = leftPos1 + 'px';
+        ball2.style.top = topPos1 + 'px';
+        leftPos1+=speedX1;
+        topPos1 +=speedY1;
+        if (leftPos1<=900&&leftPos1>=0){
+            speedX1*=1;}
+            else{speedX1*=-1;
+               }
+
+          if(topPos1<=400&&topPos1>=0){
+              speedY1*=1;
+          }  else{speedY1*=-1;
+          
+          };
+        };
+        setInterval(move,10);
+        setInterval(move1,30)
+        
+    </script>
+</body>
+</html>

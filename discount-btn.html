@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    input{
+        position: absolute;
+        top: 100px;
+        left:100px;
+    }
+    </style>
+</head>
+<body>
+    <input type="button" id="button1" value="Получить скидку!!!">
+    <script>
+   window.onload = function() {
+       var button = document.getElementById('button1');
+       button.onmouseover = function(){
+           var top1 = Math.floor(Math.random()*501);
+           var left1 = Math.floor(Math.random()*501);
+               button.style.top = top1 + 'px';
+             button.style.left = left1 + 'px';
+             }
+              button.onmouseover = function(){
+           var top1 = Math.floor(Math.random()*501);
+           var left1 = Math.floor(Math.random()*501);
+               button.style.top = top1 + 'px';
+             button.style.left = left1 + 'px';
+             button.value = 'нажми, и получишь скидку'
+             }
+   }
+    </script>
+</body>
+</html>
